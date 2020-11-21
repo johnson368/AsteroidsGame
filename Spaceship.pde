@@ -27,6 +27,6 @@ class Spaceship extends Floater
     myCenterY =  numY;
     myXspeed= 0;
     myYspeed=0;
+    myPointDirection=0;
   }
-  //other functions not shown
   } 
