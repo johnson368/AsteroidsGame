@@ -1,5 +1,6 @@
 Spaceship bob = new Spaceship();
 Star[] nightSky = new Star[200];
+ArrayList <Asteroid> abe = new ArrayList <Asteroid> ();
 public void keyPressed()
 {
   if(key == 'h')
@@ -32,6 +33,9 @@ public void setup()
   {
     nightSky[i] = new Star();
   }
+  for (int i = 0; i <50; i++) {
+    abe.add(i, new Asteroid());
+  }
 }
 public void draw() 
 {
@@ -40,6 +44,15 @@ public void draw()
   {
     nightSky[i].show();
   }
+
 bob.move();
 bob.show();
+for(int i = 0; i <20; i++) {
+  abe.get(i).show();
+  abe.get(i).move();
+  
+ 
 }
+}
+
+
