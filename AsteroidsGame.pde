@@ -47,13 +47,5 @@ public void draw()
 
 bob.move();
 bob.show();
-for(int i = 0; i <20; i++) {
-  abe.get(i).show();
-  abe.get(i).move();
-  float d = dist((float)bob.getX(),(float) bob.getY(),(float) abe.get(i).getX(),(float) abe.get(i).getY());
-  if (d <=20)
-  {
-    abe.remove(i);
-  }
-}
+
 }
