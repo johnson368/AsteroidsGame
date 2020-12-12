@@ -24,6 +24,11 @@ class Asteroid extends Floater {
     myYspeed =(int) (Math.random() * 2)+1;
     myPointDirection = (int) (Math.random() * 300)+1;;
 }
+ public double getX() {return myCenterX;}
+  public double getY() {return myCenterY;}
+  public double getPointDirection() {return myPointDirection;}
+  public double getXspeed() {return myXspeed;}
+  public double getYspeed() {return myYspeed;}
  double rotSpeed;
 public void move() 
 {
